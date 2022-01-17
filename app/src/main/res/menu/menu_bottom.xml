@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home_fragment"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/Ib_fragment"
+        android:title="Nhắn tin"
+        android:icon="@drawable/ic_baseline_mark_chat_read_24"/>
+
+    <item
+        android:id="@+id/Iam_fragment"
+        android:title="Iam"
+        android:icon="@drawable/ic_baseline_assignment_ind_24"/>
+
+
+
+</menu>

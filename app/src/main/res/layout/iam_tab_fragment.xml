@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72E3E5E7"
+    tools:context=".IamTabFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/gradient_iam"
+        android:alpha=".9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAVT"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/white"
+        app:layout_constraintHeight_percent=".14"
+        app:layout_constraintWidth_percent=".25"
+        app:layout_constraintVertical_bias=".2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias=".2"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imgAVT" />
+
+    <LinearLayout
+        android:id="@+id/Setting"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="@drawable/gradient_setting"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+
+        <LinearLayout
+            android:id="@+id/onClickInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/information_setting">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/aaa"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="Information"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-1dp"
+            android:alpha="0.4"
+            android:background="@drawable/vien_bottom_setting">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/onClickAboutus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/about_us">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="About us"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-1dp"
+            android:alpha="0.4"
+            android:background="@drawable/vien_bottom_setting">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/onClickHelp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/setting">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="Setting"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-1dp"
+            android:alpha="0.4"
+            android:background="@drawable/vien_bottom_setting">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/onClickSetting"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/help_and_sp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="Help and support"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-1dp"
+            android:alpha="0.4"
+            android:background="@drawable/vien_bottom_setting">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/onClickLogout"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/logout_setting">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="casual"
+                android:text="Log out"
+                android:textColor="#ff0000"
+                android:textSize="17sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/color_menu_bottom"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        app:itemTextColor="@color/color_menu_bottom"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_bottom">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

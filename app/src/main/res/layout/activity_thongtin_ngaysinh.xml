@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thongtin_ngaysinh">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF0000"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".42"
+        app:layout_constraintHeight_percent=".007"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/back_ngaysinh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_bias=".03"
+        app:layout_constraintWidth_percent=".1"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHorizontal_bias=".05"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".13" />
+
+    <LinearLayout
+        android:id="@+id/lnTT3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_vuong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintWidth_percent=".6">
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="?android:spinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="openDatePicker"
+            android:text="JAN 01 2020"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnTT_ngaysinh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_button"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Tiếp tục"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnTT3"
+        app:layout_constraintVertical_bias=".9"
+        app:layout_constraintWidth_percent=".8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

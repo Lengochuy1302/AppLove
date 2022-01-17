@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+     >
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    app:lottie_rawRes="@raw/blueripple"
+    ></com.airbnb.lottie.LottieAnimationView>
+<ImageView
+    android:layout_marginTop="-165dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:src="@drawable/vitri"></ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+        <TextView
+
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Bật Vị Trí"
+            android:textStyle="bold"
+            android:textSize="40dp"></TextView>
+</LinearLayout>
+            <TextView
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#AAA2A2"
+                android:text="Bạn cần bật vị trí của mình để sử dụng..."
+                android:textSize="25dp"
+                android:fontFamily="sans-serif"></TextView>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+           >
+
+
+            <TextView
+                android:background="@drawable/boder_cho_phep"
+                android:id="@+id/btnOnSignInNow"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="CHO PHÉP BẬT ĐỊA ĐIỂM"
+
+                android:textSize="22sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CHO BIẾT THÊM ↆ"
+            android:textSize="18dp"
+            android:textColor="#AAA2A2"
+            android:fontFamily="sans-serif"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

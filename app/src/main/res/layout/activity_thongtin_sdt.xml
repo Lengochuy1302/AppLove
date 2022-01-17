@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thongtin_sdt">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF0000"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_percent=".125"
+        app:layout_constraintHeight_percent=".007"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/back_sdt"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintVertical_bias=".03"-->
+<!--        app:layout_constraintWidth_percent=".1"-->
+<!--        app:layout_constraintHeight_percent=".05"-->
+<!--        app:layout_constraintHorizontal_bias=".05"-->
+<!--        android:src="@drawable/ic_baseline_arrow_back_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Số Điện Thoại của bạn"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sodienthoai"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        app:boxStrokeColor="#F288AF"
+        app:hintTextColor="#F288AF"
+
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:endIconMode="clear_text"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_percent=".8"
+        app:startIconDrawable="@drawable/ic_baseline_settings_phone_24"
+        app:startIconTint="#F288AF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/maotp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mã OTP"
+        app:boxStrokeColor="#F288AF"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        app:hintTextColor="#F288AF"
+        app:layout_constraintVertical_bias=".05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sodienthoai"
+        app:layout_constraintStart_toStartOf="@+id/sodienthoai"
+        app:layout_constraintTop_toBottomOf="@+id/sodienthoai"
+        app:startIconDrawable="@drawable/ic_baseline_tap_and_play_24"
+        app:startIconTint="#F288AF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/boder_button_test"
+        android:gravity="center"
+        android:text="Gửi OTP"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/maotp"
+        app:layout_constraintEnd_toEndOf="@+id/maotp"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintStart_toStartOf="@+id/maotp"
+        app:layout_constraintTop_toTopOf="@+id/maotp"
+        app:layout_constraintHorizontal_bias=".97"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintWidth_percent=".19" />
+
+
+    <Button
+        android:id="@+id/btnTT_sdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_button"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Tiếp tục"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maotp"
+        app:layout_constraintVertical_bias=".85"
+        app:layout_constraintWidth_percent=".8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

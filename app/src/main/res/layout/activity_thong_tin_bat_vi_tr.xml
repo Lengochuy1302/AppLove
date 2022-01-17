@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+<ImageView
+    android:layout_gravity="center"
+
+    android:layout_width="50dp"
+    android:layout_height="30dp"
+
+    android:src="@drawable/muitenlem"></ImageView>
+
+    <LinearLayout
+
+
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:background="@drawable/boder_cho_phep"
+            android:id="@+id/btnOnSignInNow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="CHO PHÉP BẬT ĐỊA ĐIỂM"
+
+            android:textSize="22sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="60dp"
+
+            >
+
+            <TextView
+
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Gặp gỡ những người ở gần bên"
+                android:textSize="30dp"></TextView>
+        </LinearLayout>
+
+<!--        <TextView-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:fontFamily="sans-serif"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Vị trí của bạn sẽ dùng để nhận biết những người dùng ở gần vị trí của bạn có khả năng tương họp với bạn"-->
+<!--            android:textSize="28dp"></TextView>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Vị trí của bạn sẽ dùng"
+            android:textColor="#998E8E"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="để nhận biết"
+            android:textColor="#998E8E"
+            android:textSize="25dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="những người dùng ở gần"
+            android:textColor="#998E8E"
+            android:textSize="25dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="vị trí của bạn có khả năng"
+            android:textColor="#998E8E"
+            android:textSize="25dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="tương hợp với"
+            android:textColor="#998E8E"
+            android:textSize="25dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="bạn"
+            android:textColor="#998E8E"
+            android:textSize="25dp"></TextView>
+
+    </LinearLayout>
+</LinearLayout>
+
